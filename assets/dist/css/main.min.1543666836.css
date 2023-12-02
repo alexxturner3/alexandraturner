@@ -2762,7 +2762,8 @@ form label {
 .o-list-item__column--float-right {
     position: absolute;
     right: 0;
-    width: 2.75em
+    width: 2.75em;
+    font-variant-numeric: tabular-nums;
 }
 
 .o-list-small-list-item {
