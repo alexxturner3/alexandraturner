@@ -1,0 +1,16 @@
+AuthName "This site is protected with a password"
+AuthType Basic
+AuthUserFile /customers/c/8/e/one-example.com/httpd.www/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user
+
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/$ $1.html
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]
