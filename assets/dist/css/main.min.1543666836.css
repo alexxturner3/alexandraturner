@@ -776,6 +776,64 @@ em {
     }
 }
 
+
+
+
+
+
+.type--micro {
+    font-family: NHaasGroteskTXStd-55Rg, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: .6vw;
+    line-height: 1.2em
+}
+
+@media screen and (max-width:1800px) {
+    .type--micro {
+        font-size: .6vw;
+        line-height: 1.2em
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .type--micro {
+        font-size: .6vw;
+        line-height: 1.2em
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .type--micro {
+        font-size: 8px;
+        font-size: .6vw;
+        line-height: 1.2em
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .type--micro {
+        font-size: 8px;
+        line-height: 1.2em
+    }
+}
+
+@media screen and (max-width:768px) {
+    .type--micro {
+        font-size: 8px;
+        line-height: 1.25em
+    }
+}
+
+@media screen and (max-width:520px) {
+    .type--micro {
+        font-size: 8px;
+        line-height: 1.25em
+    }
+}
+
+
+
+
+
 .type--uppercase {
     text-transform: uppercase
 }
