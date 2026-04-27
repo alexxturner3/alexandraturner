@@ -3129,8 +3129,9 @@ http://flickity.metafizzy.co
 
 .c-slider {
     width: 100%;
+   border: 1px solid black;
     height: 100%;
-    background-color: #ffffff;
+    background-color: white;
     opacity: 0;
 
     
@@ -3175,7 +3176,8 @@ http://flickity.metafizzy.co
     height: 0;
     padding-bottom: 66.66%;
     background-color:black;
-    background-size: cover
+    background-size: cover;
+    mix-blend-mode: multiply;
 }
 
 .c-slider__btn {
