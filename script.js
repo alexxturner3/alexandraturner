@@ -17,7 +17,8 @@ function updateTime() {
     date % 10 === 3 && date !== 13 ? 'rd' : 'th';
 
   const month = now.toLocaleDateString('en-NZ', {
-    month: 'short'
+    month: 'short',
+    year: 'numeric'
   });
 
   document.getElementById("datetime").innerHTML =
