@@ -3,10 +3,6 @@
 function updateTime() {
   const now = new Date();
 
-  const day = now.toLocaleDateString('en-NZ', {
-    weekday: 'short'
-  });
-
   const time = now.toLocaleTimeString('en-NZ', {
     hour: '2-digit',
     minute: '2-digit',
@@ -20,8 +16,12 @@ function updateTime() {
     date % 10 === 2 && date !== 12 ? 'nd' :
     date % 10 === 3 && date !== 13 ? 'rd' : 'th';
 
+  const month = now.toLocaleDateString('en-NZ', {
+    month: 'short'
+  });
+
   document.getElementById("datetime").innerHTML =
-    `${day} ${date}${suffix}, NZT ${time}`;
+    `${date}${suffix} ${month}, NZT ${time}`;
 }
 
 setInterval(updateTime, 1000);
