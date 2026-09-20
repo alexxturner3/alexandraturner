@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ABCDiatype-Regular, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  background: #d8d1e8;
+  color: #111;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* Font */
+
+@font-face {
+  font-family: ABCDiatype-Regular;
+  src: url(fonts/ABCDiatype-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Top bar */
+
+.top-bar {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+/* Center content */
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+main h1 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+main p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+}
+
+
+/* Selection */
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .top-bar {
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding-left: 20px;
+  }
+
+}
